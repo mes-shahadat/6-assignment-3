@@ -20,6 +20,9 @@
             font-family: "Manrope", sans-serif;
         }
 
+        ::selection {
+            background-color: rgba(162, 230, 53, 0.4);
+        }
     </style>
 
 </head>
@@ -36,10 +39,10 @@
                 <div class="navbar-start">
 
                     <a class="btn btn-ghost text-3xl font-bold">
-                        <span class="p-1 rounded-full translate-y-0.5 bg-lime-400">
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                                stroke="currentColor" class="size-6 w-5" style="stroke-width:2">
-                                <path strokeLinecap="round" strokeLinejoin="round"
+                        <span class="px-1 rounded-full translate-y-0.5 bg-lime-400">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                                stroke="currentColor" class="size-7 w-5">
+                                <path stroke-linecap="round" stroke-linejoin="round"
                                     d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                             </svg>
                         </span>Rinterio</a>
@@ -50,18 +53,18 @@
 
                     <div class="navbar-center hidden lg:flex">
                         <ul class="menu menu-horizontal px-1">
-                            <li><a class=" text-lg font-bold">Home</a></li>
-                            <li><a class=" text-lg ">Services</a></li>
-                            <li><a class=" text-lg ">Portfolio</a></li>
-                            <li><a class=" text-lg ">Blogs</a></li>
-                            <li><a class=" text-lg ">Contact Us</a></li>
+                            <li><a href="#" class=" text-lg font-bold">Home</a></li>
+                            <li><a href="#services" class=" text-lg font-semibold text-gray-500">Services</a></li>
+                            <li><a href="#porfolio" class=" text-lg font-semibold text-gray-500">Portfolio</a></li>
+                            <li><a href="#blogs" class=" text-lg font-semibold text-gray-500">Blogs</a></li>
+                            <li><a href="#contact" class=" text-lg font-semibold text-gray-500">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="navbar-end space-x-2">
 
-                    <button class="btn btn-ghost btn-circle bg-[#ffffffcc] max-sm:hidden md:flex">
+                    <button class="btn btn-ghost btn-circle bg-[#ffffffcc] border border-gray-200 max-sm:hidden md:flex">
                         <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                             stroke="currentColor">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -69,7 +72,7 @@
                         </svg>
                     </button>
 
-                    <button class="btn btn-ghost btn-circle bg-[#ffffffcc] max-sm:hidden md:flex">
+                    <button class="btn btn-ghost btn-circle bg-[#ffffffcc] border border-gray-200 max-sm:hidden md:flex">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                             stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round"
@@ -77,13 +80,12 @@
                         </svg>
                     </button>
 
-                    <button class="btn btn-ghost bg-lime-400 rounded-full p-0 overflow-hidden max-sm:hidden md:flex">
-                        <a class="btn btn-ghost text-2xl pb-1 font-bold">Book Consult
-                            <span class="p-1 rounded-full translate-y-0.5 bg-black text-white">
+                    <button class="btn btn-ghost bg-lime-400 rounded-full h-14 px-0 overflow-hidden max-sm:hidden md:flex">
+                        <a class="btn btn-ghost h-full text-2xl pb-1 font-bold">Book Consult
+                            <span class="px-1 rounded-full translate-y-0.5 bg-black text-white">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    strokeWidth={1.5} stroke="currentColor" className="size-6" class="w-5"
-                                    style="stroke-width:2">
-                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                    stroke-width="2" stroke="currentColor" class="size-7 w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                 </svg>
                             </span>
@@ -91,7 +93,7 @@
                     </button>
 
                     <div class="dropdown lg:hidden">
-                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-[#ffffffcc]">
+                        <div tabindex="0" role="button" class="btn btn-ghost btn-circle bg-[#ffffffcc] border border-gray-200">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
                                 stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -100,11 +102,11 @@
                         </div>
                         <ul tabindex="0"
                             class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow right-0">
-                            <li><a class=" text-lg font-bold">Home</a></li>
-                            <li><a class=" text-lg ">Services</a></li>
-                            <li><a class=" text-lg ">Portfolio</a></li>
-                            <li><a class=" text-lg ">Blogs</a></li>
-                            <li><a class=" text-lg ">Contact Us</a></li>
+                            <li><a href="#" class=" text-lg font-bold">Home</a></li>
+                            <li><a href="#services" class=" text-lg font-semibold text-gray-500">Services</a></li>
+                            <li><a href="#porfolio" class=" text-lg font-semibold text-gray-500">Portfolio</a></li>
+                            <li><a href="#blogs" class=" text-lg font-semibold text-gray-500">Blogs</a></li>
+                            <li><a href="#contact" class=" text-lg font-semibold text-gray-500">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -128,13 +130,12 @@
                             and modern sophistication, featuring weathered wood, sleek metal accents, and large windows
                             that flood the space with natural light.</p>
                         <button
-                            class="btn btn-ghost bg-lime-200 rounded-full p-0 overflow-hidden max-sm:w-full md:mx-auto">
-                            <a class="btn btn-ghost text-2xl pb-1 font-bold">View Details
-                                <span class="p-1 rounded-full translate-y-0.5 bg-lime-400">
+                            class="btn btn-ghost bg-lime-200 border border-lime-400 rounded-full h-14 p-0 overflow-hidden max-sm:w-full md:mx-auto">
+                            <a class="btn btn-ghost h-full text-2xl pb-1 font-bold">View Details
+                                <span class="px-1 rounded-full translate-y-0.5 bg-lime-400">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        strokeWidth={1.5} stroke="currentColor" className="size-6" class="w-5"
-                                        style="stroke-width:2">
-                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                        stroke-width="2" stroke="currentColor" class="size-7 w-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
                                             d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                     </svg>
                                 </span>
@@ -158,7 +159,7 @@
                 <!-- col 1 -->
                 <div class="space-y-6 text-center lg:text-left">
 
-                    <img class="max-lg:hidden lg:block -ml-14" src="./assets/Vector.png" alt="">
+                    <img class="max-lg:hidden lg:block -ml-14" src="./assets/Vector.png" alt="arrow icon">
 
                     <a href="" class="inline-flex rounded-full p-2 pr-3 bg-[#ffffffcc] mx-auto font-bold">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -199,7 +200,7 @@
 
                 <!-- col 2 -->
                 <div class="card bg-base-100">
-                    <img src="./assets/Rectangle.png" alt="expensive Rectangle building">
+                    <img src="./assets/Rectangle.png" alt="expensive Rectangle building" loading="lazy">
                 </div>
 
             </div>
@@ -261,7 +262,7 @@
         </section>
 
         <!-- services section -->
-        <section class="w-11/12 xl:w-10/12 mx-auto my-16 md:p-8 rounded-2xl text-center space-y-8">
+        <section id="services" class="w-11/12 xl:w-10/12 mx-auto my-16 md:p-8 rounded-2xl text-center space-y-8">
             <a href="" class="inline-flex rounded-full p-2 pr-3 bg-[#ffffffcc] mx-auto font-extrabold">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6">
@@ -277,9 +278,9 @@
             <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-6 text-left">
 
                 <!-- card 1 -->
-                <div class="bg-[#ffffffcc] rounded-xl p-5 pt-20 grid justify-start items-start relative space-y-4 mt-8">
+                <div class="bg-[#ffffffcc] rounded-3xl p-5 pt-20 grid justify-start items-start relative space-y-4 mt-8">
                     
-                    <span class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-300 rounded-full p-5">
+                    <span class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-200 rounded-full p-5">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-20 mx-auto text-gray-600">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 3v11.25A2.25 2.25 0 0 0 6 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0 1 18 16.5h-2.25m-7.5 0h7.5m-7.5 0-1 3m8.5-3 1 3m0 0 .5 1.5m-.5-1.5h-9.5m0 0-.5 1.5M9 11.25v1.5M12 9v3.75m3-6v6" />
                           </svg>
@@ -288,13 +289,12 @@
                     <h3 class="font-extrabold text-2xl">Architecture</h3>
                     <p class="text-gray-500 text-lg font-semibold">Our skilled architect designers at Rinterio can create captivating, thoughtful, livable spaces efficiently that resonate with our clients visions.</p>
 
-                    <button class="justify-self-start self-end btn">
+                    <button class="rounded-full justify-self-start self-end btn">
                         <a class="inline-flex text-xl font-extrabold">Read More
-                            <span class="ml-2 p-1 rounded-full translate-y-0.5  bg-lime-300">
+                            <span class="ml-2 px-1 rounded-full translate-y-0.5  bg-lime-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    strokeWidth={1.5} stroke="currentColor" className="size-6" class="w-5"
-                                    style="stroke-width:2">
-                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                    stroke-width="2" stroke="currentColor" class="size-7 w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                 </svg>
                             </span>
@@ -303,9 +303,9 @@
                 </div>
 
                 <!-- card 2 -->
-                <div class="bg-[#ffffffcc] rounded-xl p-5 pt-20 grid justify-start items-start relative space-y-4 mt-8">
+                <div class="bg-[#ffffffcc] rounded-3xl p-5 pt-20 grid justify-start items-start relative space-y-4 mt-8">
 
-                    <span class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-300 rounded-full p-5">
+                    <span class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-200 rounded-full p-5">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-20 mx-auto text-gray-600">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
                           </svg>
@@ -315,13 +315,12 @@
                     <h3 class="font-extrabold text-2xl">Concept Designs</h3>
                     <p class="text-gray-500 text-lg font-semibold">Our approach to designing both interior and exterior spaces focuses not only on visually stunning but also practical and comfortable design.</p>
 
-                    <button class="justify-self-start self-end btn">
+                    <button class="rounded-full justify-self-start self-end btn">
                         <a class="inline-flex text-xl font-extrabold">Read More
-                            <span class="ml-2 p-1 rounded-full translate-y-0.5  bg-lime-300">
+                            <span class="ml-2 px-1 rounded-full translate-y-0.5  bg-lime-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    strokeWidth={1.5} stroke="currentColor" className="size-6" class="w-5"
-                                    style="stroke-width:2">
-                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                    stroke-width="2" stroke="currentColor" class="size-7 w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                 </svg>
                             </span>
@@ -330,9 +329,9 @@
                 </div>
 
                 <!-- card 3 -->
-                <div class="bg-[#ffffffcc] rounded-xl p-5 pt-20 grid justify-start items-start relative space-y-4 mt-8">
+                <div class="bg-[#ffffffcc] rounded-3xl p-5 pt-20 grid justify-start items-start relative space-y-4 mt-8">
 
-                    <span class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-300 rounded-full p-5">
+                    <span class="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-200 rounded-full p-5">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-20 mx-auto text-gray-600">
                             <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 6h9.75M10.5 6a1.5 1.5 0 1 1-3 0m3 0a1.5 1.5 0 1 0-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 0 1-3 0m3 0a1.5 1.5 0 0 0-3 0m-9.75 0h9.75" />
                           </svg>
@@ -342,13 +341,12 @@
                     <h3 class="font-extrabold text-2xl">Make Overs</h3>
                     <p class="text-gray-500 text-lg font-semibold">Blend modern elements with minimalist design,Transforms your room with a stunning makeover by updating furniture and adding unique decor.</p>
 
-                    <button class="justify-self-start self-end btn">
+                    <button class="rounded-full justify-self-start self-end btn">
                         <a class="inline-flex text-xl font-extrabold">Read More
-                            <span class="ml-2 p-1 rounded-full translate-y-0.5  bg-lime-300">
+                            <span class="ml-2 px-1 rounded-full translate-y-0.5  bg-lime-300">
                                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                    strokeWidth={1.5} stroke="currentColor" className="size-6" class="w-5"
-                                    style="stroke-width:2">
-                                    <path strokeLinecap="round" strokeLinejoin="round"
+                                    stroke-width="2" stroke="currentColor" class="size-7 w-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round"
                                         d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                 </svg>
                             </span>
@@ -360,7 +358,7 @@
         </section>
 
         <!-- work process section -->
-        <section class="w-11/12 lg:w-10/12 mx-auto my-16 md:p-8 rounded-2xl text-center space-y-8">
+        <section class="w-11/12 lg:w-10/12 mx-auto my-16 md:p-4 rounded-2xl text-center space-y-8">
             <a href="" class="inline-flex rounded-full p-2 pr-3 bg-[#ffffffcc] mx-auto font-extrabold">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                     stroke="currentColor" class="size-6">
@@ -411,7 +409,7 @@
         </section>
 
         <!-- explore work section -->
-        <section class="lg:bg-[#ffffffcc] py-16">
+        <section id="porfolio" class="lg:bg-[#ffffffcc] py-16">
 
             <div class="w-11/12 lg:w-10/12 mx-auto md:p-8 text-center space-y-8">
                 <a href="" class="inline-flex rounded-full p-2 pr-3 bg-lime-100 mx-auto font-extrabold">
@@ -427,25 +425,24 @@
                     blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents.
                 </p>
 
-                <div class="text-left grid auto-cols-fr grid-cols-1 md:grid-cols-2 xl:grid-cols-5 gap-5">
+                <div class="text-left grid auto-cols-fr grid-cols-1 md:grid-cols-2 xl:grid-cols-8 gap-5">
 
                     <!-- item 1 -->
                     <div
-                        class="border rounded-xl inline-flex max-sm:flex-col gap-5 items-center p-6 md:col-span-2 xl:col-span-3 bg-[#ffffffcc]">
-                        <img class="max-md:w-full max-md:h-full" src="./assets/img1.png"
-                            alt="small house model in hand">
-                        <div class=" space-y-4">
-                            <h3 class="text-2xl font-black">Commercial</h3>
+                        class="border rounded-3xl inline-flex max-sm:flex-col gap-5 items-center p-4 lg:p-6 md:col-span-2 xl:col-span-5 bg-[#ffffffcc]">
+                        <img class="max-md:w-full h-full" src="./assets/img1.png"
+                            alt="small house model in hand" loading="lazy">
+                        <div class="flex flex-col items-start gap-1">
+                            <h3 class="text-2xl font-black text-gray-700">Commercial</h3>
                             <p class="text-lg font-semibold text-gray-500">The barn house captivates with its blend of
                                 rustic charm and modern. The barn house captivates with its blend of rustic charm and
                                 modern .</p>
-                            <button class="btn-ghost rounded-lg p-3">
+                            <button class="btn-ghost rounded-lg p-3 -ml-2.5">
                                 <a class="inline-flex text-xl font-bold">View Details
-                                    <span class="ml-2 p-1 rounded-full translate-y-0.5  bg-lime-300">
+                                    <span class="ml-2 px-1 rounded-full translate-y-0.5  bg-lime-300">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            strokeWidth={1.5} stroke="currentColor" className="size-6" class="w-5"
-                                            style="stroke-width:2">
-                                            <path strokeLinecap="round" strokeLinejoin="round"
+                                            stroke-width="2" stroke="currentColor" class="size-7 w-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                         </svg>
                                     </span>
@@ -455,36 +452,35 @@
                     </div>
 
                     <!-- item 2 -->
-                    <div class="border rounded-xl p-6 col-span-1 xl:col-span-2 flex bg-[#ffffffcc]">
-                        <img class="m-auto w-full h-full" src="./assets/img2.png" alt="luxuries modern villa on water">
+                    <div class="border rounded-3xl p-4 lg:p-6 col-span-1 xl:col-span-3 flex bg-[#ffffffcc]">
+                        <img class="m-auto w-full h-full" src="./assets/img2.png" alt="luxuries modern villa on water" loading="lazy">
                     </div>
 
                     <!-- item 3 -->
-                    <div class="border rounded-xl p-6 bg-[#ffffffcc] xl:hidden">
-                        <img class="w-full h-full" src="./assets/img5.png" alt="luxuries modern villa on water">
+                    <div class="border rounded-3xl p-4 lg:p-6 bg-[#ffffffcc] xl:hidden">
+                        <img class="w-full h-full" src="./assets/img5.png" alt="luxuries modern main on tiles" loading="lazy">
                     </div>
 
                     <!-- item 4 -->
-                    <div class="border rounded-xl p-6 col-span-1 max-xl:order-1 bg-[#ffffffcc]">
-                        <img class="w-full h-full" src="./assets/img3.png" alt="luxuries modern villa on water">
+                    <div class="border rounded-3xl p-4 lg:p-6 col-span-1 max-xl:order-1 xl:col-span-2 bg-[#ffffffcc]">
+                        <img class="w-full h-full" src="./assets/img3.png" alt="luxuries modern white colored villa with blue background" loading="lazy">
                     </div>
 
                     <!-- item 5 -->
                     <div
-                        class="border rounded-xl inline-flex max-sm:flex-col gap-5 items-center p-6 md:col-span-2 xl:col-span-3 bg-[#ffffffcc]">
-                        <img class="max-md:w-full max-md:h-full" src="./assets/img4.png"
-                            alt="small house model in hand">
-                        <div class=" space-y-4">
-                            <h3 class="text-2xl font-black">Commercial</h3>
+                        class="border rounded-3xl inline-flex max-sm:flex-col gap-5 items-center p-4 lg:p-6 md:col-span-2 xl:col-span-4 bg-[#ffffffcc]">
+                        <img class="max-md:w-full h-full" src="./assets/img4.png"
+                            alt="modern glassy house model with plants" loading="lazy">
+                        <div class="flex flex-col items-start gap-1">
+                            <h3 class="text-2xl font-black text-gray-700">Commercial</h3>
                             <p class="text-lg font-semibold text-gray-500">The barn house captivates with its blend of
                                 rustic charm and modern.</p>
-                            <button class="btn-ghost rounded-lg p-3">
+                            <button class="btn-ghost rounded-lg p-3 -ml-2.5">
                                 <a class="inline-flex text-xl font-bold">View Details
-                                    <span class="ml-2 p-1 rounded-full translate-y-0.5  bg-lime-300">
+                                    <span class="ml-2 px-1 rounded-full translate-y-0.5  bg-lime-300">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            strokeWidth={1.5} stroke="currentColor" className="size-6" class="w-5"
-                                            style="stroke-width:2">
-                                            <path strokeLinecap="round" strokeLinejoin="round"
+                                            stroke-width="2" stroke="currentColor" class="size-7 w-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                         </svg>
                                     </span>
@@ -494,16 +490,17 @@
                     </div>
 
                     <!-- item 6 -->
-                    <div class="border rounded-xl p-6 max-lg:order-2 bg-[#ffffffcc]">
-                        <img class="w-full h-full" src="./assets/img5.png" alt="luxuries modern villa on water">
+                    <div class="border rounded-3xl p-4 lg:p-6 max-lg:order-2 xl:col-span-2 bg-[#ffffffcc]">
+                        <img class="w-full h-full" src="./assets/img5.png" alt="luxuries modern mansion on tiles" loading="lazy">
                     </div>
 
                 </div>
             </div>
+
         </section>
 
         <!-- news highlights section -->
-        <section class="py-16">
+        <section id="blogs" class="py-16">
 
             <div class="w-11/12 xl:w-10/12 mx-auto md:p-8 text-center space-y-6">
                 <a href="" class="inline-flex rounded-full p-2 pr-3 bg-lime-100 mx-auto font-extrabold">
@@ -521,8 +518,8 @@
                 <div class="text-left grid lg:grid-cols-3 gap-5">
 
                     <!-- card 1 -->
-                    <div class="border rounded-xl p-6 space-y-2 bg-[#ffffffcc] max-md:block max-lg:flex gap-5">
-                        <img class="w-[100%]" src="./assets/article1.png" alt="violet colored glassy mansion">
+                    <div class="border rounded-3xl p-6 space-y-2 bg-[#ffffffcc] max-md:block max-lg:flex gap-5">
+                        <img class="w-[100%]" src="./assets/article1.png" alt="violet colored glassy mansion" loading="lazy">
 
                         <div class="space-y-3">
                             <div>
@@ -550,13 +547,12 @@
                             </h3>
                             <p class="font-semibold text-gray-500">The barn house captivates with its blend of rustic
                                 charm and modern. </p>
-                            <button class="btn-ghost rounded-lg p-3">
+                            <button class="btn-ghost rounded-lg p-3 -ml-2.5">
                                 <a class="inline-flex text-xl font-extrabold">Read More
-                                    <span class="ml-2 p-1 rounded-full translate-y-0.5  bg-lime-300">
+                                    <span class="ml-2 px-1 rounded-full translate-y-0.5  bg-lime-300">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            strokeWidth={1.5} stroke="currentColor" className="size-6" class="w-5"
-                                            style="stroke-width:2">
-                                            <path strokeLinecap="round" strokeLinejoin="round"
+                                            stroke-width="2" stroke="currentColor" class="size-7 w-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                         </svg>
                                     </span>
@@ -566,9 +562,9 @@
                     </div>
 
                     <!-- card 2 -->
-                    <div class="border rounded-xl p-6 space-y-2 bg-[#ffffffcc] max-md:block max-lg:flex gap-5">
+                    <div class="border rounded-3xl p-6 space-y-2 bg-[#ffffffcc] max-md:block max-lg:flex gap-5">
                         <img class="w-[100%]" src="./assets/article2.png"
-                            alt="white colored glassy mansion with swimming pool">
+                            alt="white colored glassy mansion with swimming pool" loading="lazy">
 
                         <div class="space-y-3">
                             <div>
@@ -597,13 +593,12 @@
                             <p class="font-semibold text-gray-500">The barn house captivates with its blend of rustic
                                 charm
                                 and modern. </p>
-                            <button class="btn-ghost rounded-lg p-3">
+                            <button class="btn-ghost rounded-lg p-3 -ml-2.5">
                                 <a class="inline-flex text-xl font-extrabold">Read More
-                                    <span class="ml-2 p-1 rounded-full translate-y-0.5  bg-lime-300">
+                                    <span class="ml-2 px-1 rounded-full translate-y-0.5  bg-lime-300">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            strokeWidth={1.5} stroke="currentColor" class="size-6 w-5"
-                                            style="stroke-width:2">
-                                            <path strokeLinecap="round" strokeLinejoin="round"
+                                            stroke-width="2" stroke="currentColor" class="size-7 w-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                         </svg>
                                     </span>
@@ -613,9 +608,9 @@
                     </div>
 
                     <!-- card 3 -->
-                    <div class="border rounded-xl p-6 space-y-2 bg-[#ffffffcc] max-md:block max-lg:flex gap-5">
+                    <div class="border rounded-3xl p-6 space-y-2 bg-[#ffffffcc] max-md:block max-lg:flex gap-5">
                         <img class="w-[100%]" src="./assets/article3.png"
-                            alt="brown colored glassy mansion inside forest greenary">
+                            alt="brown colored glassy mansion inside forest greenary" loading="lazy">
                         <div class="space-y-3 ">
                             <div>
                                 <div class="inline-flex items-center">
@@ -643,13 +638,12 @@
                             <p class="font-semibold text-gray-500">The barn house captivates with its blend of rustic
                                 charm
                                 and modern. </p>
-                            <button class="btn-ghost rounded-lg p-3">
+                            <button class="btn-ghost rounded-lg p-3 -ml-2.5">
                                 <a class="inline-flex text-xl font-extrabold">Read More
-                                    <span class="ml-2 p-1 rounded-full translate-y-0.5  bg-lime-300">
+                                    <span class="ml-2 px-1 rounded-full translate-y-0.5  bg-lime-300">
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                            strokeWidth={1.5} stroke="currentColor" className="size-6" class="w-5"
-                                            style="stroke-width:2">
-                                            <path strokeLinecap="round" strokeLinejoin="round"
+                                            stroke-width="2" stroke="currentColor" class="size-7 w-5">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
                                                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                         </svg>
                                     </span>
@@ -664,9 +658,9 @@
         </section>
 
         <!-- contact us -->
-        <section class="bg-[#ffffffcc] bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover my-16 py-1">
+        <section id="contact" class="bg-[#ffffffcc] bg-[url('./assets/bg.jpg')] bg-no-repeat bg-cover my-16 py-1">
 
-            <div class="w-11/12 xl:w-9/12 mx-auto md:p-8 text-center space-y-6 my-16">
+            <div class="w-11/12 xl:w-8/12 mx-auto md:p-8 text-center space-y-6 my-16">
                 <a href="" class="inline-flex rounded-full p-2 pr-3 bg-lime-100 mx-auto font-extrabold">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
                         stroke="currentColor" class="size-6">
@@ -690,13 +684,12 @@
                         <textarea class="h-16 md:col-span-2 rounded-3xl h-[250px] p-4 outline-none" placeholder="Write your message here"
                             cols="20"></textarea>
                         <button
-                            class="btn btn-ghost bg-lime-400 rounded-full h-16 overflow-hidden md:col-span-2 rounded-full">
+                            class="btn btn-active bg-lime-400 rounded-full h-16 overflow-hidden md:col-span-2 rounded-full">
                             <a class="inline-flex text-2xl pb-1 font-bold items-center">Send Mail
-                                <span class="p-2 rounded-full translate-y-0.5 bg-black text-white ml-3">
+                                <span class="p-2 px-3 rounded-full translate-y-0.5 bg-black text-white ml-3">
                                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                                        strokeWidth={1.5} stroke="currentColor" className="size-6" class="w-5"
-                                        style="stroke-width:2">
-                                        <path strokeLinecap="round" strokeLinejoin="round"
+                                        stroke-width="2" stroke="currentColor" class="size-7 w-5">
+                                        <path stroke-linecap="round" stroke-linejoin="round"
                                             d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                                     </svg>
                                 </span>
@@ -709,6 +702,7 @@
         </section>
     </main>
 
+    <!-- footer -->
     <footer class="bg-black text-white py-10">
 
         <div class="w-11/12 xl:w-9/12 mx-auto md:p-8 text-center space-y-6 my-16">
@@ -716,9 +710,9 @@
             <!-- logo -->
             <a class="btn btn-ghost text-4xl font-black hover:text-lime-600">
                 <span class="p-1 rounded-full translate-y-0.5 bg-lime-400">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5}
-                        stroke="currentColor" class="size-7 w-7" style="stroke-width:2">
-                        <path strokeLinecap="round" strokeLinejoin="round"
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2"
+                        stroke="currentColor" class="size-7 w-7">
+                        <path stroke-linecap="round" stroke-linejoin="round"
                             d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                     </svg>
                 </span>Rinterio</a>
@@ -729,22 +723,21 @@
             <!-- nav -->
             <div >
                 <ul class="menu menu-horizontal max-md:inline-block px-1">
-                    <li><a class="max-md:text-center max-md:inline-block text-lg font-bold hover:text-lime-500">Home</a></li>
-                    <li><a class="max-md:text-center max-md:inline-block text-lg hover:text-lime-500">Services</a></li>
-                    <li><a class="max-md:text-center max-md:inline-block text-lg hover:text-lime-500">Portfolio</a></li>
-                    <li><a class="max-md:text-center max-md:inline-block text-lg hover:text-lime-500">Blogs</a></li>
-                    <li><a class="max-md:text-center max-md:inline-block text-lg hover:text-lime-500">Contact Us</a></li>
+                    <li><a href="#" class="max-md:text-center max-md:inline-block text-lg font-bold hover:text-lime-500">Home</a></li>
+                    <li><a href="#services" class="max-md:text-center max-md:inline-block text-lg font-semibold text-gray-400 hover:text-lime-500">Services</a></li>
+                    <li><a href="#porfolio" class="max-md:text-center max-md:inline-block text-lg font-semibold text-gray-400 hover:text-lime-500">Portfolio</a></li>
+                    <li><a href="#blogs" class="max-md:text-center max-md:inline-block text-lg font-semibold text-gray-400 hover:text-lime-500">Blogs</a></li>
+                    <li><a href="#contact" class="max-md:text-center max-md:inline-block text-lg font-semibold text-gray-400 hover:text-lime-500">Contact Us</a></li>
                 </ul>
             </div>
 
             <!-- call to action -->
-            <button class="btn btn-ghost bg-lime-400 rounded-full mx-auto px-0 overflow-hidden md:flex max-md:w-full h-16 hover:text-lime-500">
-                <a class="btn btn-ghost text-2xl pb-1 font-bold">Book Consult
-                    <span class="p-1 rounded-full translate-y-0.5 bg-black text-white">
+            <button class="btn btn-ghost bg-lime-400 rounded-full mx-auto overflow-hidden md:flex max-md:w-full h-16 hover:text-lime-500">
+                <a class="inline-flex text-2xl font-bold">Book Consult
+                    <span class="px-2 ml-2 rounded-full translate-y-0.5 bg-black text-white">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
-                            strokeWidth={1.5} stroke="currentColor" className="size-6" class="w-5"
-                            style="stroke-width:2">
-                            <path strokeLinecap="round" strokeLinejoin="round"
+                            stroke-width="2" stroke="currentColor" class="size-9 w-5">
+                            <path stroke-linecap="round" stroke-linejoin="round"
                                 d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
                         </svg>
                     </span>
